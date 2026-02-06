@@ -1,5 +1,6 @@
 {
     "token": "ABCDEFGHIJKLMNOPQRSTUVWXYZ.1234567890", // Bot token (required)
+    "guild": "531580498263408671" // Server ID (required)
     "module_gateway": { // Config for gateway module
         "channel": "531580498263408671" // Text channel ID to send join and leave messages (required)
         "ban_patterns": [ // Case-insensitive regex patterns to automatically ban upon join (optional)
@@ -16,5 +17,11 @@
     "module_mediaonly": {
         "channels": ["1234567890123456"],
         "reply": "Your message was removed from $CHANNEL as it did not contain any media.\n\n$QUOTE"
+    },
+    "module_banner": {
+        "channel": "531580498263408671", // Text channel ID to send messages about banner changes (required)
+        "threshold": 10, // Threshold for adding/removing images to/from the banner queue.
+        "interval": 604800, // Interval (in seconds) in which the first image from the queue will be set as the banner.
+        "emojis": ["0️⃣", "1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣", "6️⃣", "7️⃣", "8️⃣", "9️⃣", "🔟"] // Emojis used for adding images to the banner queue.
     }
 }

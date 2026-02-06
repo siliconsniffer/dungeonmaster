@@ -10,6 +10,9 @@
 * Send bot embeds to a channel
 * Edit embed via form or JSON
 
+### Banner rotation (WIP)
+* add feature list here
+
 ## Todo
 * Directory modules
 * Member count tracking (gateway pipeline)
